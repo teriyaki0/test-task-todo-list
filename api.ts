@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import { ITask } from "./types/tasks";
 import moment from "moment";
 
-axios.defaults.baseURL = process.env.API_URL;
+axios.defaults.baseURL = "https://test-task-todo-list-back.vercel.app/";
 
 export const getOnProgressTask = async (): Promise<ITask[]> => {
   try {
