@@ -5,11 +5,11 @@
       "title": "buy bread",
       "descriptions": "go to shop, buy bread",
       "date": "2023-07-10",
-      "isCompleted": true
+      "isCompleted": false
     },
     {
       "id": 2,
-      "title": "hello",
+      "title": "hi",
       "descriptions": "Hello guys!!!!!!!!!!!!!!",
       "date": "2023-07-10T00:00:00.000Z",
       "isCompleted": true
@@ -19,7 +19,7 @@
       "title": "go to market",
       "descriptions": "cat",
       "date": "2023-07-12T18:00:00.000Z",
-      "isCompleted": true
+      "isCompleted": false
     }
   ]
 }
