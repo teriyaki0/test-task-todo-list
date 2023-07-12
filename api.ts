@@ -2,7 +2,7 @@ import axios from "axios";
 import { ITask } from "./types/tasks";
 import moment from "moment";
 
-axios.defaults.baseURL = "http://localhost:3001"
+axios.defaults.baseURL = process.env.API_URL
 
 
 export const getOnProgressTask = async (): Promise<ITask[]> => {
