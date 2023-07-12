@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "buy bread",
+      "descriptions": "go to shop, buy bread",
+      "date": "2023-07-10",
+      "isComplited": false
+    },
+    {
+      "id": 2,
+      "title": "hello",
+      "descriptions": "Hello guys!!!!!!!!!!!!!!",
+      "date": "2023-07-10T00:00:00.000Z",
+      "isComplited": true
+    },
+    {
+      "id": 7,
+      "title": "go to market",
+      "descriptions": "cat",
+      "date": "2023-07-12T18:00:00.000Z",
+      "isComplited": false
+    }
+  ]
+}
