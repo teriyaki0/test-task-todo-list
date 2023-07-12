@@ -22,7 +22,7 @@ const AddTaskButton = () => {
       title: taskText,
       descriptions: taskDescription,
       date: startDate,
-      isComplited: false,
+      isCompleted: false,
     });
 
     setTaskText("");

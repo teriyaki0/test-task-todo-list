@@ -2,7 +2,7 @@ import axios from "axios";
 import { ITask } from "./types/tasks";
 import moment from "moment";
 
-axios.defaults.baseURL = process.env.API_URL
+axios.defaults.baseURL = process.env.API_URL || "http://localhost:3001";
 
 
 export const getOnProgressTask = async (): Promise<ITask[]> => {
@@ -14,7 +14,7 @@ export const getOnProgressTask = async (): Promise<ITask[]> => {
     },
   });
 
-  const filteredTasks = data.filter((task: ITask) => !task.isComplited);
+  const filteredTasks = data.filter((task: ITask) => !task.isCompleted);
 
   filteredTasks.sort((a: ITask, b: ITask) => {
     const dateA = moment(a.date);
@@ -33,7 +33,7 @@ export const getOnCompletedTask = async (): Promise<ITask[]> => {
       Expires: "0",
     },
   });
-  const filteredTasks = data.filter((task: ITask) => task.isComplited);
+  const filteredTasks = data.filter((task: ITask) => task.isCompleted);
   return filteredTasks;
 };
 

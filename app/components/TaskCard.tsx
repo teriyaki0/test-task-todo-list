@@ -31,7 +31,7 @@ const TaskCard: FC<TaskProps> = ({ task }) => {
       title: taskText,
       descriptions: taskDescription,
       date: startDate,
-      isComplited: false,
+      isCompleted: false,
     });
 
     setOpenEditModal(false);
@@ -49,7 +49,7 @@ const TaskCard: FC<TaskProps> = ({ task }) => {
       title: task.title,
       descriptions: task.descriptions,
       date: task.date,
-      isComplited: !task.isComplited,
+      isCompleted: !task.isCompleted,
     });
     router.refresh();
   };
@@ -74,7 +74,7 @@ const TaskCard: FC<TaskProps> = ({ task }) => {
           <div>
             <h5
               className={` text-2xl font-bold tracking-tight  text-white  ${
-                task.isComplited ? "text-decoration-line: line-through" : ""
+                task.isCompleted ? "text-decoration-line: line-through" : ""
               }`}
             >
               {task.title}
@@ -85,7 +85,7 @@ const TaskCard: FC<TaskProps> = ({ task }) => {
           </div>
         </div>
 
-        {task.isComplited ? (
+        {task.isCompleted ? (
           ""
         ) : (
           <div className="flex">

@@ -3,5 +3,5 @@ export interface ITask {
     title: string,
     descriptions: string,
     date: Date | null,
-    isComplited: boolean
+    isCompleted: boolean
 }
